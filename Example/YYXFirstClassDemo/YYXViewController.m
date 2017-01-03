@@ -7,6 +7,7 @@
 //
 
 #import "YYXViewController.h"
+#import <YYXFirstClassDemo/UIImage+ImageEffects.h>
 
 @interface YYXViewController ()
 
@@ -17,7 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
+    imageView.image = [imageView.image blurImage];
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning

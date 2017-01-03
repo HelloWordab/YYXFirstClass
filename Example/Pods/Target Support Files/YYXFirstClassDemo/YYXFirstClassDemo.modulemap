@@ -1,0 +1,6 @@
+framework module YYXFirstClassDemo {
+  umbrella header "YYXFirstClassDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

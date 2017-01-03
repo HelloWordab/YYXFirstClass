@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'YYXFirstClassDemo_Example' do
+  pod 'YYXFirstClassDemo', :path => '../'
+
+  target 'YYXFirstClassDemo_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end
